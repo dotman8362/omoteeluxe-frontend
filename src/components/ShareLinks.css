@@ -1,0 +1,21 @@
+.share-links {
+  display: flex;
+  gap: 10px;
+}
+
+.share-links__icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2ddd0;
+  border-radius: 4px;
+  color: var(--color-rust);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.share-links__icon:hover {
+  background: var(--color-rust);
+  color: var(--color-white);
+}

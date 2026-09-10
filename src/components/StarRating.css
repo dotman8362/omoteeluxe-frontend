@@ -1,0 +1,28 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.star-rating__stars {
+  display: flex;
+  gap: 2px;
+  color: #2f8f6e;
+}
+
+.star-rating__count {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.star-rating__write-link {
+  font-size: 0.78rem;
+  color: var(--color-text-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.star-rating__write-link:hover {
+  color: var(--color-rust);
+}

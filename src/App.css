@@ -1,0 +1,9 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app__hero-wrapper {
+  position: relative;
+  width: 100%;
+}

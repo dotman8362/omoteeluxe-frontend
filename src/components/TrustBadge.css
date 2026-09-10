@@ -1,0 +1,37 @@
+.trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trust-badge__icon-wrap {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0) 75%);
+  margin-bottom: 18px;
+}
+
+.trust-badge__icon {
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.12));
+}
+
+.trust-badge__title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+}
+
+.trust-badge__description {
+  font-size: 0.92rem;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  max-width: 300px;
+  line-height: 1.5;
+}

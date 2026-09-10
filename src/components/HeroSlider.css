@@ -1,0 +1,196 @@
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 88vh;
+  min-height: 560px;
+  overflow: hidden;
+  background: var(--color-brown-900);
+}
+
+.hero-slider__track {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.04);
+  transition:
+    opacity 1s ease,
+    transform 6.5s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero-slide--active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+/* Stands in for the product photo: a soft diagonal "yarn" swatch,
+   echoing the multicolor crochet fringe from the reference image. */
+.hero-slide__swatch {
+  width: 100%;
+  height: 100%;
+  margin: 0 8% 0 0;
+  border-radius: 999px 999px 40px 40px;
+  filter: blur(0.3px);
+  box-shadow: -40px 40px 120px rgba(0, 0, 0, 0.25);
+}
+
+.hero-slider__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 11, 8, 0.55) 0%,
+    rgba(20, 11, 8, 0) 45%
+  );
+  pointer-events: none;
+}
+
+.hero-slider__copy {
+  pointer-events: auto;
+  padding: 0 48px 56px;
+  max-width: 640px;
+  color: var(--color-white);
+}
+
+.hero-slider__eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+
+.hero-slider__heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.2vw, 3.4rem);
+  line-height: 1.08;
+  margin-bottom: 14px;
+}
+
+.hero-slider__subheading {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.92;
+  margin-bottom: 28px;
+  max-width: 460px;
+}
+
+.hero-slider__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-slider__cta {
+  padding: 14px 30px;
+  background: var(--color-brown-900);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.hero-slider__cta:hover {
+  background: var(--color-rust);
+  transform: translateY(-1px);
+}
+
+.hero-slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  backdrop-filter: blur(2px);
+  transition: background 0.2s ease;
+}
+
+.hero-slider__arrow:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.hero-slider__arrow--prev {
+  left: 24px;
+}
+
+.hero-slider__arrow--next {
+  right: 24px;
+}
+
+.hero-slider__dots {
+  position: absolute;
+  bottom: 24px;
+  right: 48px;
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.hero-slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-slider__dot--active {
+  background: var(--color-white);
+  transform: scale(1.25);
+}
+
+@media (max-width: 640px) {
+  .hero-slider {
+    height: 78vh;
+    min-height: 480px;
+  }
+
+  .hero-slider__copy {
+    padding: 0 24px 40px;
+  }
+
+  .hero-slider__actions {
+    flex-wrap: wrap;
+  }
+
+  .hero-slider__arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-slider__dots {
+    right: 24px;
+  }
+
+  .hero-slide__swatch {
+    width: 70%;
+    margin-right: 0;
+  }
+}

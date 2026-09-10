@@ -1,0 +1,27 @@
+.category-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+
+.category-card__image {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  border-radius: 2px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.category-card:hover .category-card__image {
+  transform: translateY(-3px);
+  filter: brightness(1.04);
+}
+
+.category-card__label {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-brown-700);
+}

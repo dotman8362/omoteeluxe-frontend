@@ -1,0 +1,86 @@
+/* ---------------------------------------------
+   Global reset + design tokens
+--------------------------------------------- */
+:root {
+  --color-cream: #f7f1e4;
+  --color-cream-dark: #ece3cf;
+  --color-brown-900: #2a1712;
+  --color-brown-700: #45281f;
+  --color-brown-600: #5c362a;
+  --color-rust: #b3552b;
+  --color-white: #ffffff;
+  --color-text-dark: #241612;
+  --color-text-muted: #6b5c50;
+  --color-link: #1a3a6b;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --nav-height: 84px;
+  --announcement-height: 44px;
+  --max-width: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  min-width: 320px;
+  text-rendering: optimizeLegibility;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-rust);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

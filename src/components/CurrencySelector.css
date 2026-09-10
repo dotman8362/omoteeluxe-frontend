@@ -1,0 +1,63 @@
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.currency-selector__close {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  color: var(--color-brown-900);
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.currency-selector__dropdown {
+  position: relative;
+}
+
+.currency-selector__trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--color-white);
+  color: var(--color-brown-900);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.currency-selector__flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.currency-selector__menu {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  min-width: 100%;
+  background: var(--color-white);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.currency-selector__option {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 0.85rem;
+  color: var(--color-brown-900);
+  text-align: left;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.currency-selector__option:hover {
+  background: var(--color-cream);
+}

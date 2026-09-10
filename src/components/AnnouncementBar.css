@@ -1,0 +1,43 @@
+.announcement-bar {
+  position: relative;
+  height: var(--announcement-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-cream);
+  padding: 0 48px;
+}
+
+.announcement-bar__text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--color-brown-700);
+  text-align: center;
+}
+
+.announcement-bar__close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--color-brown-700);
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.announcement-bar__close:hover {
+  background: rgba(42, 23, 18, 0.08);
+}
+
+@media (max-width: 640px) {
+  .announcement-bar {
+    padding: 0 40px;
+  }
+  .announcement-bar__text {
+    font-size: 0.72rem;
+  }
+}

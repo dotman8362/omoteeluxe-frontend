@@ -1,0 +1,23 @@
+.trust-badges {
+  background: var(--color-cream);
+  padding: 56px 48px 72px;
+}
+
+.trust-badges__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .trust-badges {
+    padding: 48px 28px 56px;
+  }
+
+  .trust-badges__list {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+}

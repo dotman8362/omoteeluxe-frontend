@@ -1,0 +1,43 @@
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 46px;
+}
+
+.quantity-selector__btn {
+  width: 38px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-dark);
+  transition: background 0.15s ease;
+}
+
+.quantity-selector__btn:hover {
+  background: #e6e6e6;
+}
+
+.quantity-selector__value {
+  width: 34px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  font-family: inherit;
+}
+
+.quantity-selector__value:focus {
+  outline: none;
+}
+
+.quantity-selector__value::-webkit-outer-spin-button,
+.quantity-selector__value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
