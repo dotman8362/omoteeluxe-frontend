@@ -1,6 +1,6 @@
 .product-page {
   display: grid;
-  grid-template-columns: minmax(0, 640px) 1fr;
+  grid-template-columns: minmax(0, 480px) 1fr;   /* 640 → 480 */
   gap: 56px;
   max-width: var(--max-width);
   margin: 0 auto;
