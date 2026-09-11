@@ -399,6 +399,14 @@ function CheckoutPage() {
 
   return (
     <main className="checkout-page">
+      {isProcessing && (
+  <div className="checkout-page__overlay" role="alert" aria-live="polite">
+    <div className="checkout-page__overlay-spinner" />
+    <p className="checkout-page__overlay-text">
+      {statusMessage || "Processing..."}
+    </p>
+  </div>
+)}
       <header className="checkout-page__header">
         <div>
           <p className="checkout-page__eyebrow">Secure checkout</p>
