@@ -68,6 +68,7 @@
 
 @media (max-width: 768px) {
   .product-gallery__image {
-    aspect-ratio: 4 / 4.6;
+    aspect-ratio: 1 / 1;     /* square — much shorter */
+    max-height: 70vh;        /* hard cap so it never dominates the screen */
   }
 }
