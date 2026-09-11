@@ -203,6 +203,7 @@ function CheckoutPage() {
           ],
         },
         callback: function(response) {
+           setIsProcessing(true); 
           setStatusMessage("Verifying payment...");
           
           verifyPaymentWithBackend(response.reference)
