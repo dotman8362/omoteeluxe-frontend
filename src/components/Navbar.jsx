@@ -14,6 +14,7 @@ import {
 } from "../lib/cart.js";
 import "./Navbar.css";
 import { Trash2 } from "lucide-react";
+import omoLogo from "../assets/omotee.jpg";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -90,10 +91,13 @@ function Navbar() {
   return (
     <>
       <header className="navbar">
-        <Link to="/" className="navbar__logo">
-          <span className="navbar__logo-script">OmoteeLuxe Shop</span>
-          <span className="navbar__logo-tag">Fashion and Autogele</span>
-        </Link>
+       <Link to="/" className="navbar__logo">
+  <img
+    src={omoLogo}
+    alt="OmoteeLuxe Shop - Fashion and Autogele"
+    className="navbar__logo-image"
+  />
+</Link>
 
         <nav
           className={`navbar__links ${menuOpen ? "navbar__links--open" : ""}`}

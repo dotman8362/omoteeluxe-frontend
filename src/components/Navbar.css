@@ -20,6 +20,13 @@
   line-height: 1;
 }
 
+.navbar__logo-image {
+  height: 42px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .navbar__logo-script {
   font-family: var(--font-display);
   font-style: italic;
