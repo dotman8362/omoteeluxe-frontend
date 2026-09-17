@@ -20,11 +20,11 @@ const LINK_GROUPS = [
   {
     heading: "Shop",
     links: [
-      { name: "Ready to wears", path: "/shop?category=ready-to-wears" },
+      { name: "Made-To-Order", path: "/shop?category=made-to-order" },
       { name: "Autogele", path: "/shop?category=autogele" },
-      { name: "Luxury", path: "/shop?category=luxury" },
+      { name: "The Luxe Edits", path: "/shop?category=the-luxe-edits" },
       { name: "Handfans", path: "/shop?category=handfans" },
-      { name: "New Arrivals", path: "/shop?category=new-arrivals" },
+      { name: "Best Sellers", path: "/shop?category=best-sellers" },
     ],
   },
   {

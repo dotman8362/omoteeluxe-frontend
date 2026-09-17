@@ -28,6 +28,7 @@ import PrivacyPolicyPage from "./components/Privacy.jsx";
 import TermsOfServicePage from "./components/Terms.jsx";
 import RefundsPage from "./components/Refunds.jsx";
 import { TawkLiveChat } from 'tawk-react';
+import CollectionHeader2 from "./components/CollectionHeader2.jsx";
 
 // Main App component with Router
 function App() {
@@ -52,11 +53,12 @@ function AppContent() {
             <>
               <HeroSlider />
               <ProductGrid />
-              <ProductGrid
+              <CollectionHeader2/>
+              {/* <ProductGrid
                 heading="Omoteeluxe"
                 collection="omoteeluxe"
                 emptyMessage="No Omoteeluxe products available yet."
-              />
+              /> */}
               <CollectionHeader />
               <CategoryShowcase />
               <TrustFeatures />

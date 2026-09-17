@@ -13,18 +13,24 @@ const CATEGORIES = [
   },
   {
     id: 2,
-    label: 'Luxury',
+    label: 'The Luxe Edits',
     image: luxuryImg,
   },
   {
     id: 3,
-    label: 'Shopteeluxe',
+    label: 'Handfans',
     image: shopteeluxeImg,
   },
   {
+    
     id: 4,
-    label: 'Ready To Wear',
+    label: 'Fila',
     image: readyToWearImg,
+  },
+  {
+    id: 5,
+    label: 'Made-To-Order',
+    image: shopteeluxeImg,
   },
 ];
 

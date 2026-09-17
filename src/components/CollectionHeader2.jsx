@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard.jsx";
 import { fetchProducts } from "../lib/sanity.js";
 import "./CollectionHeader.css";
 
-const CATEGORIES = ["The Luxe Edits", "Made-To-Order", "Best Sellers"];
+const CATEGORIES = ["Autogele", "Handfans", "Fila"];
 
 function normalizeCategory(value) {
   return typeof value === "string" ? value.trim().toLowerCase() : "";
@@ -57,7 +57,7 @@ function CollectionHeader() {
     <section className="collection-section">
       <header className="collection-header">
         <h1 className="collection-header__title">
-          OmoteeLuxe <em>Collection</em>
+          Autogelebyomotee 
         </h1>
 
         <nav className="collection-header__tabs" aria-label="Category filters">
