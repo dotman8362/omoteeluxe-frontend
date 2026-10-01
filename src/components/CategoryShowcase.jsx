@@ -1,9 +1,9 @@
 import CategoryCard from './CategoryCard.jsx';
 import './CategoryShowcase.css';
 
-import autogeleImg from '../assets/front-view-smiley-woman-outdoors.jpg';
-import luxuryImg from '../assets/picture-details-long-green-dress-made-dense-fabric-with-neat-tailoring-white-buttons.jpg';
-import shopteeluxeImg from '../assets/smiling-pretty-elegant-lady-white-hat-black-dress-walking-street-fashion-street-concept.jpg';
+import autogeleImg from '../assets/photo_2026-10-01_05-13-04.jpg';
+import luxuryImg from '../assets/photo_2026-10-01_05-14-40.jpg';
+import shopteeluxeImg from '../assets/photo_2026-10-01_05-14-47.jpg';
 import readyToWearImg from '../assets/IMG_8484.JPEG';
 const CATEGORIES = [
   {
