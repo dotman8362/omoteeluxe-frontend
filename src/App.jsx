@@ -32,6 +32,7 @@ import TermsOfServicePage from "./components/Terms.jsx";
 import RefundsPage from "./components/Refunds.jsx";
 import { TawkLiveChat } from "tawk-react";
 import CollectionHeader2 from "./components/CollectionHeader2.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -44,7 +45,6 @@ function App() {
 function AppContent() {
   const location = useLocation();
 
-  // 👇👇👇 THE useEffect GOES HERE 👇👇👇
   useEffect(() => {
     const sr = ScrollReveal({
       origin: "bottom",
@@ -62,7 +62,6 @@ function AppContent() {
 
     return () => sr.destroy();
   }, [location.pathname]);
-  // 👆👆👆 END useEffect 👆👆👆
 
   return (
     <div className="app">
@@ -101,6 +100,7 @@ function AppContent() {
         propertyId="6aa2532afd82573442c94209"
         widgetId="1k2519o9i"
       />
+      <Analytics />
     </div>
   );
 }
