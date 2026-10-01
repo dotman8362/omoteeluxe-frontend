@@ -10,78 +10,110 @@ const FAQS = [
     id: 'difference-1',
     category: 'About OmoteeLuxe',
     question: 'What Makes OmoteeLuxe Different?',
-    answer:
-      'At OmoteeLuxe, We Create Timeless Ready-To-Wear Pieces Designed For Women Who Value Elegance, Comfort, And Confidence. Every Piece Is Carefully Selected To Help You Look Polished And Luxurious Without The Stress Of Overthinking What To Wear.',
+    answer: [
+      'We create timeless ready-to-wear pieces designed for women who value elegance, comfort, and confidence.',
+      'Every piece is carefully selected to help you look polished and luxurious.',
+      'No stress of overthinking what to wear.',
+    ],
   },
   {
     id: 'delivery-1',
     category: 'Orders & Shipping',
     question: 'How Long Does Delivery Take?',
-    answer:
-      'Orders Within Lagos Are Typically Delivered Within 1–3 Business Days.Orders Outside Lagos Usually Arrive Within 2–7 Business Days.International Delivery Times Vary By Country.Once Your Order Is Shipped, You\'ll Receive A Tracking Update.',
+    answer: [
+      'Orders within Lagos are typically delivered within 1–3 business days.',
+      'Orders outside Lagos usually arrive within 2–7 business days.',
+      'International delivery times vary by country.',
+      'Once your order is shipped, you\'ll receive a tracking update.',
+    ],
   },
   {
     id: 'delivery-2',
     category: 'Orders & Shipping',
     question: 'Do You Deliver Nationwide And Internationally?',
-    answer:
-      'Yes We Deliver Across Nigeria And To Selected International Destinations.Shipping Fees Are Calculated At Checkout Based On Your Location.',
+    answer: [
+      'Yes, we deliver across Nigeria and to selected international destinations.',
+      'Shipping fees are calculated at checkout based on your location.',
+    ],
   },
   {
     id: 'sizing-1',
     category: 'Sizing & Fit',
     question: 'How Do I Choose The Right Size?',
-    answer:
-      'Each Product Includes A Detailed Size Guide To Help You Find Your Perfect Fit.If You\'re Unsure, Simply Contact Our Customer Care Team Before Ordering. We\'ll Happily Recommend The Best Size For You.',
+    answer: [
+      'Each product includes a detailed size guide to help you find your perfect fit.',
+      'If you\'re unsure, contact our customer care team before ordering.',
+      'We\'ll happily recommend the best size for you.',
+    ],
   },
   {
     id: 'returns-1',
     category: 'Returns & Exchanges',
     question: 'Do You Accept Returns Or Refunds?',
-    answer:
-      'Due To The Nature Of Our Products, We Do Not Offer Refunds For Change Of Mind.Refunds Are Only Processed If You Receive A Wrong Or Defective Item.',
+    answer: [
+      'Due to the nature of our products, we do not offer refunds for change of mind.',
+      'Refunds are only processed if you receive a wrong or defective item.',
+    ],
   },
   {
     id: 'tracking-1',
     category: 'Orders & Shipping',
     question: 'How Do I Track My Order?',
-    answer:
-      'Once Your Order Has Been Dispatched, We\'ll Send Your Tracking Details Via WhatsApp, SMS, Or Email.You Can Also Contact Our Customer Care Team At Any Time For Order Updates.',
+    answer: [
+      'Once your order has been dispatched, we\'ll send your tracking details via WhatsApp, SMS, or email.',
+      'You can also contact our customer care team at any time for order updates.',
+    ],
   },
   {
     id: 'payments-1',
     category: 'Payments',
     question: 'What Payment Methods Do You Accept?',
-    answer:
-      'We Accept Secure Payments Through Bank Transfer, Debit Cards, Credit Cards, And Other Available Payment Options Displayed At Checkout.All Transactions Are Processed Securely To Protect Your Information.',
+    answer: [
+      'We accept secure payments through bank transfer, debit cards, credit cards, and other available payment options displayed at checkout.',
+      'All transactions are processed securely to protect your information.',
+    ],
   },
   {
     id: 'restocks-1',
     category: 'Products & Collections',
     question: 'Are Your Pieces Restocked?',
-    answer:
-      'Some Of Our Collections Are Produced In Limited Quantities To Maintain Their Exclusivity.Once A Style Sells Out, It May Not Be Restocked.If You Love A Piece, We Recommend Ordering Before It\'s Gone.',
+    answer: [
+      'Some of our collections are produced in limited quantities to maintain their exclusivity.',
+      'Once a style sells out, it may not be restocked.',
+      'If you love a piece, we recommend ordering before it\'s gone.',
+    ],
   },
   {
     id: 'care-1',
     category: 'Product Care',
     question: 'How Do I Care For My Outfit?',
-    answer:
-      'To Preserve The Beauty Of Your Garment:• Hand Wash Or Use A Gentle Machine Cycle.• Wash With Mild Detergent.• Do Not Bleach.• Air Dry In Shade.• Iron On Low Heat Or Steam For Best Results.Following These Care Instructions Helps Your Outfit Maintain Its Beauty For Years.',
+    answer: [
+      'Hand wash or use a gentle machine cycle.',
+      'Wash with mild detergent.',
+      'Do not bleach.',
+      'Air dry in shade.',
+      'Iron on low heat or steam for best results.',
+      'Following these care instructions helps your outfit maintain its beauty for years.',
+    ],
   },
   {
     id: 'whatsapp-1',
     category: 'Orders & Support',
     question: 'Can I Order Through WhatsApp?',
-    answer:
-      'Absolutely.You Can Place Your Order Directly Through Our Website Or Chat With Us On WhatsApp If You Need Styling Advice, Size Assistance, Or Help Completing Your Purchase.',
+    answer: [
+      'Absolutely.',
+      'You can place your order directly through our website.',
+      'Or chat with us on WhatsApp if you need styling advice, size assistance, or help completing your purchase.',
+    ],
   },
   {
     id: 'styling-1',
     category: 'Styling Advice',
     question: 'Do You Offer Styling Advice?',
-    answer:
-      'Yes.Whether You\'re Dressing For Church, Work, Brunch, Weddings, Vacations, Or Everyday Elegance, Our Team Is Happy To Recommend Pieces That Suit Your Style, Body Shape, And Occasion.',
+    answer: [
+      'Yes.',
+      'Whether you\'re dressing for church, work, brunch, weddings, vacations, or everyday elegance, our team is happy to recommend pieces that suit your style, body shape, and occasion.',
+    ],
   },
 ];
 

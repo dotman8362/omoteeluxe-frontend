@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowIcon } from "./Icons.jsx";
 import "./HeroSlider.css";
-import heroImage from "../assets/IMG_9726.JPEG";
+import heroImage from "../assets/WhatsApp Image 2026-05-30 at 06.45.36.jpeg";
 import heroImage1 from "../assets/IMG_8484.JPEG";
 import heroImage2 from "../assets/IMG_8482.JPEG";
 

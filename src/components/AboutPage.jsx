@@ -13,45 +13,45 @@ import {
 
 const VALUES = [
   {
-    title: "Crafted with intention",
-    text: "Every piece is shaped by hand, with care taken at every stitch and finish.",
+    title: "Effortless by design",
+    text: "Getting dressed should feel effortless — pieces curated so you never have to overthink what to wear.",
     icon: Heart,
   },
   {
-    title: "Rooted in heritage",
-    text: "Our designs draw from Nigerian artistry and the timeless detail of modern luxury.",
+    title: "Refined, not loud",
+    text: "Luxury is how you feel when you wear it. Every detail is chosen to help you feel completely put together.",
     icon: Award,
   },
   {
-    title: "Made to be worn",
-    text: "We create pieces that feel effortless, elevated, and lasting in your wardrobe.",
+    title: "Made to move with you",
+    text: "From work to church, brunch, celebrations, and everyday moments — designed to move beautifully with you.",
     icon: Star,
   },
 ];
 
 const MILESTONES = [
   {
-    year: "2019",
-    title: "Slow-made beginnings",
-    text: "The studio began with a love of tactile, expressive pieces and the belief that beauty should feel personal.",
+    year: "Our Philosophy",
+    title: "Luxury is how you feel",
+    text: "Luxury is more than what you wear. It is how you feel when you wear it — polished, elegant, and effortlessly expensive.",
   },
   {
-    year: "2021",
-    title: "Signature detailing",
-    text: "From sculptural silhouettes to rich textures, each design balances softness with confidence.",
+    year: "The Founder",
+    title: "The woman behind the brand",
+    text: "Founded by Omotee, Omoteeluxe was born from a love for fashion and a desire to make elevated dressing feel simpler and more accessible.",
   },
   {
-    year: "2023",
-    title: "A modern luxury house",
-    text: "Today, Omoteeluxee brings  elegance to clients who appreciate timeless style.",
+    year: "Our Promise",
+    title: "Your presence should speak",
+    text: "Every woman who shops with Omoteeluxe should feel beautiful, confident, and completely put together — your presence should speak before you do.",
   },
 ];
 
 const STATS = [
-  { number: "30+", label: "Hours per piece", icon: Clock },
-  { number: "100%", label: "Handcrafted", icon: Sparkles },
-  { number: "50+", label: "Unique designs", icon: Gem },
-  { number: "1000+", label: "Happy clients", icon: Users },
+  { number: "100%", label: "Curated with care", icon: Sparkles },
+  { number: "Effortless", label: "Everyday elegance", icon: Heart },
+  { number: "Timeless", label: "Refined pieces", icon: Gem },
+  { number: "1000+", label: "Women styled", icon: Users },
 ];
 
 function AboutPage() {
@@ -62,15 +62,16 @@ function AboutPage() {
         <div className="about-page__hero-content">
           <div className="about-page__hero-badge">
             <span className="about-page__hero-badge-dot" />
-            Established 2019
+            Luxury Ready-To-Wear
           </div>
-          <p className="about-page__eyebrow">About Omoteeluxee</p>
+          <p className="about-page__eyebrow">About Omoteeluxe</p>
           <h1 className="about-page__hero-title">
-            Luxury, crafted by hand and styled with intention.
+            Polished, elegant, and effortlessly expensive.
           </h1>
           <p className="about-page__hero-text">
-            We design pieces that feel intimate and elevated — rooted in
-            Nigerian craft, shaped by modern elegance, and made to be treasured.
+            Created for the modern woman who wants to look refined without
+            overthinking what to wear — pieces that move beautifully with you,
+            wherever the day takes you.
           </p>
           <div className="about-page__actions">
             <Link to="/shop" className="about-page__primary-btn">
@@ -91,13 +92,13 @@ function AboutPage() {
             <div className="about-page__hero-card-icon">
               <Sparkles size={28} strokeWidth={1.5} />
             </div>
-            <p className="about-page__hero-card-label">Crafted in Nigeria</p>
+            <p className="about-page__hero-card-label">For the modern woman</p>
             <h2 className="about-page__hero-card-title">
-              Every creation begins with texture, story, and purpose.
+              Style that speaks before you do.
             </h2>
             <p className="about-page__hero-card-text">
-              From the first stitch to the final finish, each product is shaped
-              with a balance of artistry and precision.
+              Beautiful details, refined versatility, and the quiet confidence
+              that comes from feeling completely put together.
             </p>
             <div className="about-page__hero-card-decoration" />
           </div>
@@ -123,28 +124,29 @@ function AboutPage() {
       <div className="about-page__story">
         <div className="about-page__story-content">
           <div className="about-page__story-copy">
-            <span className="about-page__story-label">Our story</span>
+            <span className="about-page__story-label">Our philosophy</span>
             <h2 className="about-page__story-title">
-              Born from tradition. Refined for the modern wardrobe.
+              Getting dressed should feel effortless.
             </h2>
             <div className="about-page__story-divider" />
             <p className="about-page__story-text">
-              Omoteeluxee is a celebration of slow craftsmanship and elevated
-              everyday beauty. Our work honours heritage while embracing the
-              confidence and ease of contemporary luxury.
+              Omoteeluxe is a luxury ready-to-wear brand created for the modern
+              woman who wants to look polished, elegant, and effortlessly
+              expensive — without overthinking what to wear.
             </p>
             <p className="about-page__story-text">
-              We believe the finest fashion should feel personal — tactile,
-              expressive, and built to last beyond a single season.
+              From everyday sophistication to work, church, brunch, celebrations,
+              and special occasions, our pieces are designed to move beautifully
+              with you — making it easier to show up with confidence and intention.
             </p>
           </div>
 
           <div className="about-page__story-quote">
             <div className="about-page__quote-mark">"</div>
             <blockquote className="about-page__quote-text">
-              Beauty is not loud. It is intentional, thoughtful, and made to endure.
+              Luxury is more than what you wear. It is how you feel when you wear it.
             </blockquote>
-            <cite className="about-page__quote-author">— Omoteeluxee</cite>
+            <cite className="about-page__quote-author">— Omoteeluxe</cite>
           </div>
         </div>
       </div>
@@ -152,7 +154,7 @@ function AboutPage() {
       {/* Values Section */}
       <div className="about-page__values-section">
         <div className="about-page__values-header">
-          <span className="about-page__values-label">Our values</span>
+          <span className="about-page__values-label">Our promise</span>
           <h2 className="about-page__values-title">What we stand for</h2>
         </div>
         <div className="about-page__values-grid">
@@ -178,11 +180,13 @@ function AboutPage() {
       {/* Craft Section */}
       <div className="about-page__craft">
         <div className="about-page__craft-header">
-          <span className="about-page__craft-label">The process</span>
-          <h2 className="about-page__craft-title">Made slowly, worn forever.</h2>
+          <span className="about-page__craft-label">The woman behind the brand</span>
+          <h2 className="about-page__craft-title">Founded by Omotee.</h2>
           <p className="about-page__craft-description">
-            Each piece is shaped through a careful process of handwork, detail,
-            and quality control, resulting in pieces that feel elevated and enduring.
+            Omoteeluxe was born from a love for fashion and a desire to make
+            beautiful, elevated dressing feel simpler and more accessible — every
+            collection reflecting a simple belief: your presence should speak
+            before you do.
           </p>
         </div>
 
@@ -207,9 +211,10 @@ function AboutPage() {
       {/* CTA Section */}
       <div className="about-page__cta">
         <div className="about-page__cta-content">
-          <h2 className="about-page__cta-title">Experience the craft</h2>
+          <h2 className="about-page__cta-title">Show up with confidence</h2>
           <p className="about-page__cta-text">
-            Discover pieces that tell a story of heritage, artistry, and timeless elegance.
+            Discover pieces designed to make you feel beautiful, confident, and
+            completely put together — every single time.
           </p>
           <Link to="/shop" className="about-page__cta-btn">
             Shop the collection

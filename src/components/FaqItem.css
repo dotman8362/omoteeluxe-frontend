@@ -15,6 +15,9 @@
   font-weight: 600;
   color: var(--color-text);
   transition: color 0.15s ease;
+  /* Better tap behavior on mobile */
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
 }
 
 .faq-item__question:hover {
@@ -53,4 +56,116 @@
   line-height: 1.7;
   color: var(--color-text-muted);
   max-width: 640px;
+}
+
+/* ================================
+   Bullet list answers
+   ================================ */
+
+.faq-item__answer-list {
+  list-style: disc;
+  margin: 0;
+  padding: 0 4px 22px 22px;
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 640px;
+}
+
+.faq-item__answer-list li {
+  margin-bottom: 6px;
+}
+
+.faq-item__answer-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Slightly tightened marker spacing */
+.faq-item__answer-list li::marker {
+  color: var(--color-gold);
+}
+
+/* ================================
+   Mobile responsiveness
+   ================================ */
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+  .faq-item__question {
+    gap: 12px;
+    padding: 18px 2px;
+    font-size: 0.95rem;
+  }
+
+  .faq-item__answer p {
+    padding: 0 2px 18px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    max-width: 100%;
+  }
+
+  .faq-item__answer-list {
+    padding: 0 2px 18px 20px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    max-width: 100%;
+  }
+}
+
+/* Standard phones */
+@media (max-width: 480px) {
+  .faq-item__question {
+    gap: 10px;
+    padding: 16px 0;
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  /* Slightly smaller chevron on tiny screens */
+  .faq-item__chevron {
+    width: 18px;
+    height: 18px;
+  }
+
+  .faq-item__answer p {
+    padding: 0 0 16px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .faq-item__answer-list {
+    padding: 0 0 16px 18px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .faq-item__answer-list li {
+    margin-bottom: 5px;
+  }
+}
+
+/* Very small phones (iPhone SE, older Androids) */
+@media (max-width: 360px) {
+  .faq-item__question {
+    font-size: 0.88rem;
+    padding: 14px 0;
+  }
+
+  .faq-item__answer p {
+    font-size: 0.85rem;
+  }
+
+  .faq-item__answer-list {
+    font-size: 0.85rem;
+    padding-left: 16px;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .faq-item__chevron,
+  .faq-item__answer-wrap {
+    transition: none;
+  }
 }

@@ -110,7 +110,7 @@ try {
             <dl className={styles.details}>
               <div className={styles.detailRow}>
                 <dt>Visit</dt>
-                <dd>15 Olusanya street off AIT road kola, Lagos</dd>
+                <dd>Lagos, Nigeria</dd>
               </div>
               <div className={styles.detailRow}>
                 <dt>Email</dt>

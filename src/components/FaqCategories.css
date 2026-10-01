@@ -20,6 +20,9 @@
   border-radius: 999px;
   padding: 10px 20px;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .faq-categories__icon {
@@ -38,21 +41,62 @@
 }
 
 .faq-categories__pill--active {
-  background: var(--color-black);
-  border-color: var(--color-black);
-  color: var(--color-cream);
+  background: var(--color-gold);
+  border-color: #000;
+  color: #000;
 }
 
+/* ================================
+   Mobile responsiveness — wrapped
+   ================================ */
+
+/* Tablets and below — allow pills to wrap, tighten spacing */
 @media (max-width: 640px) {
   .faq-categories {
-    justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding: 0 20px 40px;
-    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px 36px;
+    gap: 8px;
   }
 
   .faq-categories__pill {
-    flex-shrink: 0;
+    padding: 9px 16px;
+    font-size: 0.8rem;
+  }
+
+  .faq-categories__icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Standard phones */
+@media (max-width: 480px) {
+  .faq-categories {
+    padding: 0 14px 32px;
+    gap: 6px;
+  }
+
+  .faq-categories__pill {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    gap: 5px;
+  }
+
+  .faq-categories__icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .faq-categories {
+    padding: 0 12px 28px;
+  }
+
+  .faq-categories__pill {
+    padding: 7px 12px;
+    font-size: 0.74rem;
   }
 }
