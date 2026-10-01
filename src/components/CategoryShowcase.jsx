@@ -5,6 +5,7 @@ import autogeleImg from '../assets/photo_2026-10-01_05-13-04.jpg';
 import luxuryImg from '../assets/photo_2026-10-01_05-14-40.jpg';
 import shopteeluxeImg from '../assets/photo_2026-10-01_05-14-47.jpg';
 import readyToWearImg from '../assets/IMG_8484.JPEG';
+import readyToWearImg1 from '../assets/WhatsApp Image 2026-05-30 at 06.45.36.jpeg';
 const CATEGORIES = [
   {
     id: 1,
@@ -30,7 +31,7 @@ const CATEGORIES = [
   {
     id: 5,
     label: 'Made-To-Order',
-    image: shopteeluxeImg,
+    image: readyToWearImg1,
   },
 ];
 

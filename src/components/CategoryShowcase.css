@@ -26,6 +26,15 @@
   padding: 40px 48px 64px;
 }
 
+/* ✅ Uniform image sizing */
+.category-showcase__list img,
+.category-showcase__image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 1024px) {
   .category-showcase__list {
     grid-template-columns: repeat(2, 1fr);
