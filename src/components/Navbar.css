@@ -480,3 +480,18 @@
 .navbar__search-close:hover {
   color: #1f1f1f;
 }
+
+
+
+@media (max-width: 900px) {
+  .navbar__burger {
+    display: flex !important;
+    outline: 3px solid lime !important;
+    min-width: 22px;
+    min-height: 22px;
+  }
+
+  .navbar__burger span {
+    background: lime !important;
+  }
+}
