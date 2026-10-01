@@ -64,7 +64,7 @@ function HeroSlider() {
 
   return (
     <section
-      className="hero-slider"
+      className="hero-slider sr-item"
       aria-roledescription="carousel"
       onMouseEnter={pauseAutoplay}
       onMouseLeave={restartAutoplay}

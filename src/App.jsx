@@ -1,11 +1,14 @@
 // App.js
+import { useEffect } from "react";
 import {
   BrowserRouter,
   Routes,
   Route,
   useNavigate,
   useParams,
+  useLocation,
 } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
 import AnnouncementBar from "./components/AnnouncementBar.jsx";
 import Navbar from "./components/Navbar.jsx";
 import HeroSlider from "./components/HeroSlider.jsx";
@@ -21,16 +24,15 @@ import OrderSuccessPage from "./components/OrderSuccessPage.jsx";
 import TrustFeatures from "./components/TrustFeatures.jsx";
 import "./App.css";
 import CollectionHeader from "./components/CollectionHeader.jsx";
-import FaqPage from "./components/FaqPage.jsx"; 
+import FaqPage from "./components/FaqPage.jsx";
 import ShippingPage from "./components/ShippingPage.jsx";
 import ContactPage from "./components/ContactPage.jsx";
 import PrivacyPolicyPage from "./components/Privacy.jsx";
 import TermsOfServicePage from "./components/Terms.jsx";
 import RefundsPage from "./components/Refunds.jsx";
-import { TawkLiveChat } from 'tawk-react';
+import { TawkLiveChat } from "tawk-react";
 import CollectionHeader2 from "./components/CollectionHeader2.jsx";
 
-// Main App component with Router
 function App() {
   return (
     <BrowserRouter>
@@ -39,8 +41,29 @@ function App() {
   );
 }
 
-// Separate component for the main content
 function AppContent() {
+  const location = useLocation();
+
+  // 👇👇👇 THE useEffect GOES HERE 👇👇👇
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "40px",
+      duration: 800,
+      delay: 100,
+      easing: "cubic-bezier(0.6, 0.2, 0.1, 1)",
+      reset: false,
+      viewFactor: 0.15,
+    });
+
+    sr.reveal(".sr-item", { interval: 100 });
+    sr.reveal("section:not(.sr-item)", { interval: 100 });
+    sr.reveal("footer:not(.sr-item)");
+
+    return () => sr.destroy();
+  }, [location.pathname]);
+  // 👆👆👆 END useEffect 👆👆👆
+
   return (
     <div className="app">
       <AnnouncementBar message="Nigerian Family, please remember to select Paystack at checkout for easy Naira payment." />
@@ -53,12 +76,7 @@ function AppContent() {
             <>
               <HeroSlider />
               <ProductGrid />
-              <CollectionHeader2/>
-              {/* <ProductGrid
-                heading="Omoteeluxe"
-                collection="omoteeluxe"
-                emptyMessage="No Omoteeluxe products available yet."
-              /> */}
+              <CollectionHeader2 />
               <CollectionHeader />
               <CategoryShowcase />
               <TrustFeatures />
@@ -79,15 +97,14 @@ function AppContent() {
       </Routes>
 
       <Footer />
-        <TawkLiveChat 
-        propertyId="6aa2532afd82573442c94209" 
-        widgetId="1k2519o9i" 
+      <TawkLiveChat
+        propertyId="6aa2532afd82573442c94209"
+        widgetId="1k2519o9i"
       />
     </div>
   );
 }
 
-// Wrapper for ProductDetail to handle params
 function ProductDetailWrapper() {
   const navigate = useNavigate();
   const { id } = useParams();
