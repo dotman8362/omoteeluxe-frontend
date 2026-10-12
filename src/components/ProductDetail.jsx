@@ -10,7 +10,7 @@ import { urlFor } from "../lib/imageUrl";
 import { addToCart, saveCart } from "../lib/cart.js";
 import "./ProductDetail.css";
 
-const WHATSAPP_ORDER_NUMBER = "2340000000000";
+const WHATSAPP_ORDER_NUMBER = "2347048304972";
 
 function ProductDetail({ productId, onBack }) {
   const navigate = useNavigate();

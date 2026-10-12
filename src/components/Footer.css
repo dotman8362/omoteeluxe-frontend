@@ -37,6 +37,7 @@
 .footer__newsletter-form {
   display: flex;
   width: 100%;
+  min-width: 0;
   max-width: 420px;
   border-bottom: 1px solid rgba(247, 241, 228, 0.35);
   padding-bottom: 10px;
@@ -44,6 +45,7 @@
 
 .footer__newsletter-input {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: none;
   color: var(--color-cream);

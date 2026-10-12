@@ -227,8 +227,9 @@ function Navbar() {
         onClick={() => setCartOpen(false)}
       />
 
+      {cartOpen && (
       <aside
-        className={`navbar__cart-drawer ${cartOpen ? "navbar__cart-drawer--open" : ""}`}
+        className="navbar__cart-drawer navbar__cart-drawer--open"
         aria-label="Shopping cart"
       >
         <div className="navbar__cart-header">
@@ -304,6 +305,7 @@ function Navbar() {
           </button>
         </div>
       </aside>
+      )}
     </>
   );
 }
